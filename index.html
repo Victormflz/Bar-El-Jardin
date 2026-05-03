@@ -392,6 +392,44 @@
       .storefront__poster-frame { transform: none; }
     }
 
+    /* ============ FERIA BANNER ============ */
+    .feria {
+      background: var(--madera-oscura);
+      color: var(--crema);
+      padding: 22px 24px;
+      text-align: center;
+    }
+    .feria__inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .feria__badge {
+      background: var(--dorado);
+      color: var(--verde-profundo);
+      font-family: var(--manuscrito);
+      font-size: 1.1rem;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+    .feria__text {
+      font-size: 1rem;
+      color: rgba(250, 246, 236, 0.92);
+      line-height: 1.4;
+    }
+    .feria__text strong { color: var(--dorado-suave); }
+    @media (max-width: 720px) {
+      .feria { padding: 18px 20px; }
+      .feria__inner { gap: 10px; }
+      .feria__text { font-size: 0.95rem; }
+    }
+
     /* ============ ABOUT ============ */
     .about { background: var(--crema); position: relative; }
     .about__grid {
@@ -931,6 +969,16 @@
       </div>
     </div>
   </header>
+
+  <!-- ============ FERIA BANNER ============ -->
+  <div class="feria">
+    <div class="feria__inner">
+      <span class="feria__badge">Cada día 6</span>
+      <p class="feria__text">
+        Hay feria en Viloira — <strong>pulpo hasta tu mesa</strong>, música y el doble de ambiente de lo normal.
+      </p>
+    </div>
+  </div>
 
   <!-- ============ ABOUT ============ -->
   <section class="about" id="sobre">
